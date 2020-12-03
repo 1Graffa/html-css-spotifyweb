@@ -101,10 +101,13 @@ nav .home img{
   color: white;
   cursor:pointer;
 }
-.playlist ul{
+/* .scolling-playlist{
+  min-height: 200px;
+} */
+.playlist .scolling-playlist ul{
   list-style: none;
 }
-.playlist li:hover{
+.playlist .scolling-playlist li:hover{
   color:white;
   cursor:  pointer;
 }
