@@ -13,7 +13,6 @@ h4{
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #191525;
 }
 /* NAV */
 nav {
@@ -108,7 +107,7 @@ nav .home img{
 }
 /* MAIN */
 main{
-  background-color: yellow;
+  background-color: #191525;
   width: calc(100% - 100% / 5);
   height:100% ;
 }
