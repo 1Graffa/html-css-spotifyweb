@@ -2,7 +2,7 @@
   margin:0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'montserrat', sans-serif;
 }
 h1,
 h2{
@@ -126,7 +126,7 @@ nav .home img{
 main{
   color: rgba(255, 255, 255, 0.5);
   padding-top: 90px;
-  background-color: #191525;
+  background-color: #141922;
   width: calc(100% - 100% / 6);
   height:100% ;
   overflow-y: scroll;
@@ -179,7 +179,6 @@ main{
   cursor: pointer;
 }
 /* BOX */
-
 .row-recent{
   display: flex;
   flex-wrap: wrap;
@@ -196,20 +195,48 @@ main{
   font-size: 16px;
   color: white;
   font-weight: bolder;
-  margin: 10px;
+  margin: 10px 0;
 }
 .box h4{
   font-size: 14px;
 }
 .box img{
-  width: 160px;
-  height: 160px;
+  width: 100%;
 }
+.box .image-area{
+  width: 100%;
+  position: relative;
+}
+.box .round{
+  border-radius: 50%;
+}
+.play-video {
+  color: transparent;
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+.icon{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50% , -50%);
+}
+.image-area:hover .play-video{
+  color:white;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
 .row-per-te{
   display: flex;
+  text-align: center;
 }
 .artisti{
   display: flex;
+  text-align: center;
 }
 .artisti img{
   border-radius: 50%;
@@ -220,5 +247,5 @@ footer {
   height: 100px;
   position: fixed;
   bottom:0;
-  background-color: rgb(46, 49, 49);
+  background-color: #282828;
 }
