@@ -14,6 +14,9 @@ h3,
 h4{
   font-weight: normal;
 }
+.grey{
+  color :rgba(255, 255, 255, 0.5);
+}
 .container1 {
   display: flex;
   width: 100%;
@@ -229,7 +232,9 @@ main{
   color:white;
   background-color: rgba(50, 50, 50, 0.5);
 }
-
+/* .image-area:hover{
+  opacity: 0.2;
+} */
 .row-per-te{
   display: flex;
   text-align: center;
@@ -241,11 +246,100 @@ main{
 .artisti img{
   border-radius: 50%;
 }
+/* FOOTER */
 footer {
-  z-index: 99;
+  z-index: 9;
   width: 100%;
   height: 100px;
   position: fixed;
   bottom:0;
   background-color: #282828;
+}
+footer .icone{
+  cursor: pointer;
+}
+footer h3{
+  font-size: 16px;
+  color: white;
+  font-weight: bolder;
+}
+footer h4{
+  font-size: 14px;
+  color:rgba(255, 255, 255, 0.5);
+}
+.container3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px;
+}
+/* LATO SINISTRO */
+.lato-sx{
+  text-align: left;
+  display:flex;
+  align-items: center;
+}
+.lato-sx img{
+  width: 50px;
+}
+.brano{
+  margin: 0 10px;
+}
+.cuore{
+  padding-left: 20px;
+}
+.cuore i{
+  padding: 0 10px;
+}
+.lato-sx i:hover{
+  color:white;
+}
+/* CENTRALE */
+.centrale{
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.comandi ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.comandi i{
+  margin: 10px;
+  font-size: 20px;
+}
+.icona-speciale i{
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.icona-speciale i:hover{
+  font-size: 40px;
+}
+/* LATO DESTRO */
+.lato-dx{
+  color: white;
+  display:flex;
+}
+
+
+.comandi ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.comandi i{
+  margin: 10px;
+  font-size: 20px;
+}
+.icona-speciale i{
+  width: 50px;
+  font-size: 30px;
+  text-align: center;
 }
