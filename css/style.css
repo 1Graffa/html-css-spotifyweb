@@ -42,7 +42,7 @@ main{
   text-align: right;
 }
 .call-to-action .btn {
-  font-size: 10px;
+  font-size: 15px;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
@@ -54,7 +54,7 @@ main{
 .call-to-action .btn:hover{
   transition: 0.2s;
   padding: 10px 20px;
-  font-size: 15px;
+  font-size: 20px;
   color: #191525;
   background-color: white;
   font-weight: bolder;
@@ -187,12 +187,12 @@ nav .home img{
   margin:10px;
 }
 .box{
-  flex-basis: calc(100% / 6);
+  flex-basis: calc(100% / 6 - 2px);
   min-width: 150px;
   padding-left: 10px;
 }
 .box:last-child{
-  padding-right: 10px;
+  margin-right: 10px;
 
 }
 .box h3{
@@ -272,8 +272,8 @@ footer h4{
 .container3{
   height: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   margin: 0 15px;
 }
 /* LATO SINISTRO */
@@ -300,14 +300,10 @@ footer h4{
 /* CENTRALE */
 .centrale{
   color: white;
-  display:flex;
-  justify-content: center;
-  align-items: center;
 }
 .comandi ul {
   list-style: none;
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100%;
 }
@@ -323,10 +319,56 @@ footer h4{
 .icona-speciale i:hover{
   font-size: 40px;
 }
+/* Barra */
+.barra-di-sotto{
+  display: flex;
+  align-items: center;
+}
+.barra {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.centrale .barra {
+  width: 300px;
+}
+.barra .linea {
+  position: relative;
+  height: 100%;
+  border-radius: 2px;
+  background-color: white;
+}
+.barra .linea {
+  width: 25%;
+}
+.barra:hover .linea {
+  background-color: greenyellow;
+}
+.barra:hover .linea .cerchio {
+  position: absolute;
+  background-color: white;
+  top: 50%;
+  right: 0;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+.minuto-sx {
+  padding-right: 20px
+}
+.minuto-dx {
+  padding-left:20px;
+}
+
 /* LATO DESTRO */
 .lato-dx{
   color: white;
   display:flex;
+  justify-content: flex-end;
 }
 .comandi ul {
   list-style: none;
@@ -340,7 +382,16 @@ footer h4{
   font-size: 20px;
 }
 .icona-speciale i{
-  width: 50px;
+  width: 100%;
   font-size: 30px;
   text-align: center;
+}
+/* VOLUME */
+.lato-dx .comandi{
+
+}
+.lato-dx .barra{
+  width: 100px;
+  height: 5px;
+  color: white;
 }
