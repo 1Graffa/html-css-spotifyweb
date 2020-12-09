@@ -27,13 +27,19 @@
         NAV - COLONNA SINISTRA -->
       <nav>
         <div class="colonna-sx">
+          <!-- Logo desktop -->
           <div class="logo-spotify">
             <img src="img/logo.svg" alt="logo">
           </div>
+          <!-- LOGO MOBILE in none per desktop-->
+          <div class="logo-small">
+            <img src="img/logo-small.svg" alt="logo-mobile">
+          </div>
           <div class="home">
-            <h4 class="white"><img src="img/home.svg" alt="home"> Home</h4>
-            <h4><img src="img/search.svg" alt="search"> Cerca</h4>
-            <h4><img src="img/libreria.svg" alt="libro"> La tua libreria</h4>
+            <!-- (Mettiamo lo span alla scritta che segue l'immagine così poi lo selezioniamo in display none per le risoluzioni piu basse) -->
+            <h4 class="white active"><img src="img/home.svg" alt="home"> <span>Home</span></h4>
+            <h4><img src="img/search.svg" alt="search"> <span>Cerca</span></h4>
+            <h4><img src="img/libreria.svg" alt="libro"><span> La tua libreria</span></h4>
           </div>
                       <!-- PLAYLIST -->
           <div class="playlist">
@@ -206,7 +212,7 @@
       <!-- FOOTER -->
 
       <footer>
-        <div class="container3">
+        <div class="container-footer">
 
           <!-- LATO SINISTRO -->
           <div class="lato-sx">
